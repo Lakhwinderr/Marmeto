@@ -1,4 +1,11 @@
 const cards = document.querySelector(".cards");
+
+function showDropdown() {
+    var dropdownContent = document.querySelector('.dropdown-content');
+    dropdownContent.style.display = 'block';
+
+  }
+
 function selectCategory(clickedEle, category) {
   const bttnInner = `
     <img src="./assets/${category}.svg" alt="vector" style="width: 30px; height: 30px; margin-right: 7px;">
@@ -14,8 +21,8 @@ function selectCategory(clickedEle, category) {
     `;
   const bttn = document.querySelector(".dropbtn");
   bttn.innerHTML = bttnInner;
-
-  //work on the larger screen button
+  var dropdownContent = document.querySelector('.dropdown-content');
+  dropdownContent.style.display = 'none';
 
   //update the body based on category
   //first clear the cards
@@ -24,6 +31,8 @@ function selectCategory(clickedEle, category) {
   updatePage(category);
   
 }
+
+
 
 const select = document.querySelector(".select")
 select.addEventListener("click", (e) => {
