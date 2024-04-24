@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Shopping Category</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <header><h1>Select Your Choice</h1></header>
+    <div class="dropdown">
+      <button class="dropbtn">Categories</button>
+      <div class="dropdown-content">
+        <div onclick="selectCategory(this, 'men')">Men's</div>
+        <div onclick="selectCategory(this, 'women')">Women's</div>
+        <div onclick="selectCategory(this, 'kids')">Kids</div>
+      </div>
+    </div>
+    <div class="select">
+      <div onclick="selectCategory(this, 'men')" class="hidden">
+        <img
+          src="./assets/men.svg"
+          alt="vector"
+          style="width: 30px; height: 30px; margin-right: 7px"
+        />
+        Mens
+      </div>
+      <div onclick="selectCategory(this, 'women')" class="hidden">
+        <img
+          src="./assets/women.svg"
+          alt="vector"
+          style="width: 30px; height: 30px; margin-right: 7px"
+        />
+        Womens
+      </div>
+      <div onclick="selectCategory(this, 'kids')" class="hidden">
+        <img
+          src="./assets/kids.svg"
+          alt="vector"
+          style="width: 30px; height: 30px; margin-right: 7px"
+        />
+
+        Kids
+      </div>
+    </div>
+    <div class="flex">
+      <div class="cards"></div>
+    </div>
+
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
