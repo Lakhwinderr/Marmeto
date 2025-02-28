@@ -143,7 +143,10 @@ const updatePage = (category) => {
 
       if (category === "men") {
         mensProducts.forEach((product) => {
-          createCard(product);
+          if(product.id > 1){
+            createCard(product);;
+          }
+          
         });
       }
       if (category === "women") {
